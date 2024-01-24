@@ -874,7 +874,7 @@ p {
 
 .div-block {
   width: 600px;
-  height: 760px;
+  height: 780px;
   background-color: #f7f7f7;
   border-radius: 10px;
   margin: auto;
@@ -1362,6 +1362,21 @@ p {
 }
 
 .text-block-6:hover {
+  color: #333;
+}
+
+.text-block-7 {
+  background-image: url('../images/pdf-file.png');
+  background-position: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-top: 5px;
+  padding-left: 48px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-block-7:hover {
   color: #333;
 }
 
