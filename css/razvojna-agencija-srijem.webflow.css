@@ -1162,7 +1162,7 @@ p {
 
 .div-block-8 {
   width: 600px;
-  height: 485px;
+  height: 550px;
   background-color: #f7f7f7;
   border-radius: 10px;
   margin: auto;
@@ -1377,6 +1377,21 @@ p {
 }
 
 .text-block-7:hover {
+  color: #333;
+}
+
+.text-block-8 {
+  background-image: url('../images/archive.png');
+  background-position: 25px;
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  margin-top: 5px;
+  padding-left: 48px;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.text-block-8:hover {
   color: #333;
 }
 
