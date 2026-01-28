@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="hr">
+
+<head>
+    <meta charset="utf-8">
+    <title>RAS | Novosti</title>
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+
+    <style>
+        .news-body {
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .news-body img {
+            max-width: 100%;
+            height: auto;
+            margin: 20px 0;
+            border-radius: 4px;
+            display: block;
+        }
+
+        .news-body p {
+            margin-bottom: 20px;
+        }
+
+        .news-body ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+
+        .news-body li {
+            margin-bottom: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header is injected by renderHeader() in main.js, but we need the container if it expects one, 
+       or usually it just appends to body or a specific placeholder. 
+       Looking at cpp.html, it just has comments. main.js appends to body? 
+       Let's check main.js: renderHeader() uses document.body.prepend or similar? 
+       Ah, main.js imports renderHeader from components.js. 
+       Let's assume it handles injection correctly. 
+       However, the user provided template had valid body structure. -->
+
+    <!-- Header injected by main.js -->
+
+    <div class="section dark">
+        <div class="container text-center">
+            <h1 id="article-title" class="main-heading" style="color:white; font-size:2.5rem;"></h1>
+            <div class="horizontal-bar beige"></div>
+            <div id="article-summary" class="subheading" style="color:rgba(255,255,255,0.8);"></div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="container news-body">
+            <br><br>
+            <img id="article-image" src="" alt="">
+            <div id="article-content" class="vijesttext"></div>
+        </div>
+    </div>
+
+    <script type="module" src="../js/main.js"></script>
+</body>
+
+</html>
